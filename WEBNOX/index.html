@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth overflow-x-hidden">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Webnox — Sites, Apps e Automações</title>
+    <meta name="description"
+        content="Webnox: criação de sites, aplicativos web e automações. Integrações (n8n, Sankhya, Mercado Pago), performance e SEO para seu negócio." />
+    <meta name="keywords"
+        content="criação de sites, aplicativos web, automações, n8n, sankhya, e-commerce, mercado pago, desenvolvimento web, webnox" />
+    <meta name="author" content="Webnox" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta property="og:title" content="Webnox — Sites, Apps e Automações" />
+    <meta property="og:description"
+        content="Criamos sites, apps e automações que geram resultado real. Fale conosco." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="https://webnox.com/" />
+    <meta property="og:image" content="https://webnox.com/og-image.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Webnox",
+    "url": "https://webnox.com/",
+    "email": "victorhmartins230@gmail.com",
+    "telephone": "+55-44-99732-0182",
+    "sameAs": [
+      "https://www.instagram.com/seuusuario",
+      "https://www.linkedin.com/in/seuusuario",
+      "https://github.com/seuusuario"
+    ]
+  }
+  </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* ===== Utilitários extras ===== */
+        body .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .fade {
+            opacity: 0;
+            transform: translateY(40px) scale(0.98);
+            filter: blur(4px);
+            transition: opacity 700ms ease, transform 700ms ease, filter 700ms ease;
+        }
+
+        .fade.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+            filter: blur(0);
+        }
+
+        .brand-gradient {
+            background: linear-gradient(135deg, #1F3A93 0%, #5BC0EB 70%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .btn {
+            @apply inline-flex items-center gap-2 px-5 py-3 rounded-2xl text-sm font-semibold transition hover:opacity-90;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white font-sans overflow-x-hidden">
+
+    <!-- Navbar fixa -->
+    <header id="navbar" class="px-6 py-4 fixed top-0 left-0 w-full z-50 transition duration-500">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex-shrink-0">
+                <img src="logo.png" alt="Webnox Logo" class="h-24 w-auto" />
+            </div>
+
+            <div class="flex items-center gap-10">
+                <nav class="flex items-center gap-8 font-extrabold text-[1.1rem] tracking-wide">
+                    <a href="#quem-somos"
+                        class="flex items-center gap-1 text-[#5BC0EB] hover:text-[#FFC857] transition">
+                        <i class="fas fa-user"></i> QUEM SOMOS
+                    </a>
+                    <a href="#servicos" class="flex items-center gap-1 text-[#5BC0EB] hover:text-[#FFC857] transition">
+                        <i class="fas fa-laptop-code"></i> SERVIÇOS
+                    </a>
+                    <a href="#portfolio" class="flex items-center gap-1 text-[#5BC0EB] hover:text-[#FFC857] transition">
+                        <i class="fas fa-laptop-code"></i> PORTFÓLIO
+                    </a>
+                    <a href="#contato" class="flex items-center gap-1 text-[#5BC0EB] hover:text-[#FFC857] transition">
+                        <i class="fas fa-envelope"></i> CONTATO
+                    </a>
+                </nav>
+                <a href="#contato"
+                    class="ml-4 px-4 py-2 bg-gradient-to-r from-[#1F3A93] to-[#5BC0EB] text-white rounded font-bold hover:from-[#5BC0EB] hover:to-[#3DE0B4] transition">
+                    <i class="fas fa-comments"></i> Solicitar Orçamento
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Viewport com snap e SEM barra -->
+    <main id="vp" class="h-screen overflow-y-auto no-scrollbar snap-y snap-mandatory">
+
+        <!-- HERO -->
+        <section id="home"
+            class="min-h-screen snap-start grid place-items-center bg-gradient-to-br from-[#000000] via-[#0a0f2c] to-[#1F3A93] relative overflow-hidden">
+            <div class="fade text-center px-6">
+                <h1
+                    class="text-[4.5rem] md:text-[10rem] font-extrabold bg-gradient-to-r from-[#1F3A93] to-[#5BC0EB] bg-clip-text text-transparent drop-shadow-lg">
+                    WEBNOX
+                </h1>
+                <p class="mt-6 text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
+                    Conectamos marcas ao digital com <span class="text-[#5BC0EB] font-semibold">automação</span>,
+                    <span class="text-[#FFC857] font-semibold">design</span> e
+                    <span class="text-[#3DE0B4] font-semibold">performance</span>.
+                </p>
+                <div class="mt-8">
+                    <a href="#contato"
+                        class="px-6 py-3 bg-[#3DE0B4] text-black font-semibold rounded-xl hover:scale-105 transition shadow-lg">
+                        Solicite um orçamento
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUEM SOMOS -->
+        <section id="quem-somos"
+            class="relative min-h-screen snap-start grid place-items-center px-6 pt-24 overflow-hidden bg-gradient-to-br from-[#000000] via-[#0a0f2c] to-[#1F3A93]">
+            <!-- Grid animado -->
+            <div class="absolute inset-0 z-0 opacity-10 animate-pulse pointer-events-none">
+                <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <defs>
+                        <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+                            <path d="M60 0H0V60" fill="none" stroke="#5BC0EB22" stroke-width="1" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+            </div>
+
+
+            <!-- Conteúdo -->
+            <div class="fade max-w-7xl w-full relative z-10 grid md:grid-cols-2 gap-12 items-start">
+                <!-- TEXTO -->
+                <div class="text-left">
+                    <h2 class="text-[3rem] md:text-[4.5rem] font-extrabold mb-8 text-[#5BC0EB] leading-tight">
+                        Quem Somos
+                    </h2>
+                    <p class="text-white/90 text-lg md:text-xl leading-relaxed">
+                        A <span class="font-bold text-[#5BC0EB]">Webnox</span> é um estúdio digital focado em criar
+                        experiências que conectam negócios ao universo digital de forma inteligente, eficiente e
+                        acessível.
+                    </p>
+                    <p class="text-white/80 mt-6 text-base md:text-lg leading-relaxed">
+                        Com uma abordagem centrada no usuário e na performance, oferecemos soluções personalizadas para
+                        empresas que buscam evoluir digitalmente com estratégia e qualidade. Cada projeto nasce com foco
+                        em <strong class="text-[#FFC857]">velocidade, segurança e escalabilidade</strong>.
+                    </p>
+                    <p class="text-white/70 mt-6 text-base md:text-lg leading-relaxed">
+                        Acreditamos que tecnologia não é apenas ferramenta, mas sim um catalisador de transformação.
+                        Atuamos como parceiros estratégicos, entregando não só soluções digitais, mas também visão de
+                        crescimento e inovação contínua.
+                    </p>
+                    <p class="text-white/60 mt-6 text-sm italic">
+                        Transformamos ideias em produtos digitais de alto impacto — com estética apurada, processos bem
+                        definidos e atenção total aos resultados.
+                    </p>
+                </div>
+
+
+                <!-- ÍCONES INLINE -->
+                <div class="grid grid-cols-2 gap-6">
+                    <div
+                        class="bg-white/5 rounded-2xl border border-white/10 p-5 text-center hover:scale-105 transition">
+                        <div class="w-12 h-12 mx-auto mb-3">
+                            <svg fill="none" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="14" y="16" width="36" height="28" rx="2" stroke="white" stroke-width="3" />
+                                <rect x="10" y="22" width="10" height="18" rx="2" stroke="white" stroke-width="3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-semibold text-lg">Experiência</h3>
+                        <p class="text-white/60 text-sm mt-1">Soluções digitais personalizadas e funcionais.</p>
+                    </div>
+                    <div
+                        class="bg-white/5 rounded-2xl border border-white/10 p-5 text-center hover:scale-105 transition">
+                        <div class="w-12 h-12 mx-auto mb-3">
+                            <svg fill="none" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 48L44 20M40 20L44 24L24 44L20 40L40 20" stroke="white" stroke-width="3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-semibold text-lg">Design</h3>
+                        <p class="text-white/60 text-sm mt-1">Visual moderno, acessível e responsivo.</p>
+                    </div>
+                    <div
+                        class="bg-white/5 rounded-2xl border border-white/10 p-5 text-center hover:scale-105 transition">
+                        <div class="w-12 h-12 mx-auto mb-3">
+                            <svg fill="white" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32 12L36 24L28 24L32 12Z" />
+                                <rect x="20" y="24" width="24" height="28" rx="2" stroke="white" stroke-width="3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-semibold text-lg">Estratégia</h3>
+                        <p class="text-white/60 text-sm mt-1">Tecnologia alinhada aos objetivos do negócio.</p>
+                    </div>
+                    <div
+                        class="bg-white/5 rounded-2xl border border-white/10 p-5 text-center hover:scale-105 transition">
+                        <div class="w-12 h-12 mx-auto mb-3">
+                            <svg fill="none" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="24" stroke="white" stroke-width="3" />
+                                <path d="M32 32L48 24" stroke="white" stroke-width="3" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-semibold text-lg">Performance</h3>
+                        <p class="text-white/60 text-sm mt-1">Velocidade, SEO e estabilidade técnica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section id="servicos"
+            class="relative min-h-screen snap-start grid place-items-center px-6 pt-24 overflow-hidden bg-gradient-to-tr from-[#0a0f2c] via-[#1F3A93] to-[#000000]">
+            <!-- Grid animado SVG no fundo -->
+            <div class="absolute inset-0 z-0 opacity-10 animate-pulse pointer-events-none">
+                <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <defs>
+                        <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+                            <path d="M60 0H0V60" fill="none" stroke="#5BC0EB22" stroke-width="1" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+            </div>
+
+            <!-- Conteúdo -->
+            <div class="fade max-w-7xl w-full relative z-10">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-10 text-[#5BC0EB]">Serviços</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+
+                    <!-- Modelo de Card -->
+                    <div
+                        class="group rounded-3xl p-6 border border-white/10 bg-white/5 hover:bg-white/10 transition duration-500 relative overflow-hidden hover:shadow-xl hover:scale-105">
+                        <div class="w-16 h-16 mb-5">
+                            <svg class="w-full h-full" fill="none" viewBox="0 0 64 64"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="14" y="16" width="36" height="28" rx="2" stroke="white" stroke-width="3" />
+                                <rect x="10" y="22" width="10" height="18" rx="2" stroke="white" stroke-width="3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Sites Personalizados</h3>
+                        <ul class="text-sm text-white/75 space-y-1">
+                            <li>• Landing pages, institucionais e lojas virtuais</li>
+                            <li>• SEO, performance e responsividade</li>
+                            <li>• Checkout integrado e painel de pedidos</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="group rounded-3xl p-6 border border-white/10 bg-white/5 hover:bg-white/10 transition duration-500 relative overflow-hidden hover:shadow-xl hover:scale-105">
+                        <div class="w-16 h-16 mb-5">
+                            <svg class="w-full h-full" fill="none" viewBox="0 0 64 64"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 48L44 20M40 20L44 24L24 44L20 40L40 20" stroke="white" stroke-width="3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Aplicativos Web</h3>
+                        <ul class="text-sm text-white/75 space-y-1">
+                            <li>• Portais, dashboards e sistemas internos</li>
+                            <li>• Controle de acesso e painéis interativos</li>
+                            <li>• Integração com APIs e bancos de dados</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="group rounded-3xl p-6 border border-white/10 bg-white/5 hover:bg-white/10 transition duration-500 relative overflow-hidden hover:shadow-xl hover:scale-105">
+                        <div class="w-16 h-16 mb-5">
+                            <svg class="w-full h-full" fill="white" viewBox="0 0 64 64"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32 12L36 24L28 24L32 12Z" />
+                                <rect x="20" y="24" width="24" height="28" rx="2" stroke="white" stroke-width="3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Automações Inteligentes</h3>
+                        <ul class="text-sm text-white/75 space-y-1">
+                            <li>• Bots, integrações e Webnox Flow</li>
+                            <li>• Automatização de tarefas e comunicados</li>
+                            <li>• Disparos em WhatsApp, Sheets e ERPs</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="group rounded-3xl p-6 border border-white/10 bg-white/5 hover:bg-white/10 transition duration-500 relative overflow-hidden hover:shadow-xl hover:scale-105">
+                        <div class="w-16 h-16 mb-5">
+                            <svg class="w-full h-full" fill="none" viewBox="0 0 64 64"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="24" stroke="white" stroke-width="3" />
+                                <path d="M32 32L48 24" stroke="white" stroke-width="3" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Soluções para E-commerce</h3>
+                        <ul class="text-sm text-white/75 space-y-1">
+                            <li>• Catálogo, carrinho, frete e estoque</li>
+                            <li>• Checkout com Pix, boletos e gateways</li>
+                            <li>• Notificações e painel administrativo</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="group rounded-3xl p-6 border border-white/10 bg-white/5 hover:bg-white/10 transition duration-500 relative overflow-hidden hover:shadow-xl hover:scale-105">
+                        <div class="w-16 h-16 mb-5">
+                            <svg class="w-full h-full" fill="none" viewBox="0 0 64 64"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 52H52V20H12V52Z" stroke="white" stroke-width="3" />
+                                <path d="M12 28H52" stroke="white" stroke-width="3" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Business Intelligence</h3>
+                        <ul class="text-sm text-white/75 space-y-1">
+                            <li>• Dashboards e relatórios inteligentes</li>
+                            <li>• Integração com sistemas e SQL</li>
+                            <li>• Exportação de relatórios e KPI</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        class="group rounded-3xl p-6 border border-white/10 bg-white/5 hover:bg-white/10 transition duration-500 relative overflow-hidden hover:shadow-xl hover:scale-105">
+                        <div class="w-16 h-16 mb-5">
+                            <svg class="w-full h-full" fill="none" viewBox="0 0 64 64"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 24H44V28H20V24ZM20 32H44V36H20V32ZM20 40H36V44H20V40Z" fill="white" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-3">Suporte & Manutenção</h3>
+                        <ul class="text-sm text-white/75 space-y-1">
+                            <li>• Atualizações técnicas e melhorias</li>
+                            <li>• Monitoramento e segurança</li>
+                            <li>• Atendimento ágil e recorrente</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato"
+            class="relative min-h-screen snap-start grid place-items-center px-6 pt-24 overflow-hidden bg-gradient-to-br from-[#000000] via-[#0a0f2c] to-[#1F3A93]">
+            <!-- Grid animado no fundo -->
+            <div class="absolute inset-0 z-0 opacity-10 animate-pulse pointer-events-none">
+                <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                    <defs>
+                        <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+                            <path d="M60 0H0V60" fill="none" stroke="#5BC0EB22" stroke-width="1" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+            </div>
+
+            <!-- Conteúdo -->
+            <div class="fade max-w-3xl w-full text-center relative z-10">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#5BC0EB]">Vamos conversar?</h2>
+                <p class="text-white/80 mt-3 text-lg">Escolha o melhor canal e conte sobre seu projeto.</p>
+
+                <!-- Botões -->
+                <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://wa.me/5544997320182" target="_blank" rel="noopener"
+                        class="inline-flex items-center gap-2 px-6 py-3 bg-[#3DE0B4] text-black font-semibold rounded-2xl shadow hover:scale-105 transition">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.52 3.48a12 12 0 0 0-17 0 11.9 11.9 0 0 0-2.74 12.61l-1.58 5.8 5.94-1.56A11.94 11.94 0 0 0 12 24h.01A12 12 0 0 0 20.52 3.48zM12 22a9.94 9.94 0 0 1-5.29-1.48l-.38-.24-3.52.93.94-3.45-.25-.39A9.93 9.93 0 1 1 12 22zm5.05-7.35-.7.7c-.27.26-.78.51-1.1.57a8.87 8.87 0 0 1-3.28-.72 8.2 8.2 0 0 1-2.63-1.97 8.22 8.22 0 0 1-1.98-2.65 8.88 8.88 0 0 1-.71-3.27c.06-.32.3-.84.56-1.1l.7-.7c.3-.3.56-.3.84-.3h.6c.18 0 .4.1.54.27.38.48.83 1.36.93 1.56.1.2.17.42.06.67s-.46 1.1-.62 1.34c-.1.14-.2.3-.06.53a6.56 6.56 0 0 0 2.29 2.29c.23.13.39.04.53-.06.25-.17 1.1-.53 1.34-.62.26-.1.47-.03.67.06.2.1 1.08.55 1.56.93.17.13.27.35.27.54v.6c0 .28 0 .53-.3.83z" />
+                        </svg>
+                        WhatsApp: (44) 99732-0182
+                    </a>
+                    <a href="mailto:victorhmartins230@gmail.com"
+                        class="inline-flex items-center gap-2 px-6 py-3 border border-white/20 text-white font-semibold rounded-2xl hover:bg-white/10 hover:scale-105 transition">
+                        <i class="fas fa-envelope"></i>
+                        victorhmartins230@gmail.com
+                    </a>
+                </div>
+
+                <!-- Redes sociais -->
+                <div class="mt-10 flex justify-center gap-6 text-white text-2xl">
+                    <a href="#" aria-label="Instagram" class="hover:text-[#5BC0EB] transition"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn" class="hover:text-[#5BC0EB] transition"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub" class="hover:text-[#5BC0EB] transition"><i
+                            class="fab fa-github"></i></a>
+                </div>
+
+                <p class="text-xs text-white/50 mt-6">* Integrações com automações, CRM, Google Sheets e sistemas
+                    externos.</p>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer
+            class="snap-start border-t border-white/10 py-8 text-center text-sm text-white/60 bg-black/10 backdrop-blur-md">
+            <div class="max-w-7xl mx-auto px-4">
+                <p class="text-white/70">
+                    © <span id="year"></span> <span class="font-semibold text-[#5BC0EB]">Webnox</span>. Todos os
+                    direitos reservados.
+                </p>
+                <p class="mt-1">CNPJ opcional • Hospedado por <span class="text-white/40">Certo Click</span></p>
+                <div class="mt-4 text-white/30 text-xs tracking-wide">
+                    Desenvolvido com foco em performance, design e automações inteligentes.
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // IntersectionObserver para animar entradas
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const el = entry.target.querySelector('.fade');
+                if (!el) return;
+                if (entry.isIntersecting) el.classList.add('visible');
+                else el.classList.remove('visible');
+            });
+        }, { threshold: 0.45 });
+        document.querySelectorAll('section').forEach(sec => io.observe(sec));
+
+        // Ano dinâmico no rodapé
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
